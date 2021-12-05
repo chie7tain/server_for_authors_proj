@@ -6,6 +6,7 @@ import os from "os";
 const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/authors");
 const spyRouter = require("./routes/spy");
+const displayAllAuthors = require("./routes/displayAuthors");
 
 import express from "express";
 const app = express();
@@ -19,10 +20,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use("/api/v1", indexRouter);
 app.use("/spy", spyRouter);
 app.use("/api/v1/authors", authorRouter);
-
+app.use("/api/v1/displayAuthors", displayAllAuthors);
 // catch 404 and forward to error handler
 app.use(function (req: Request, res: Response, next: NextFunction) {
   next(createError(404));

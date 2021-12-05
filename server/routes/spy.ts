@@ -9,6 +9,7 @@ const spies: object[] = [];
 const displayAllSpies = (req: any, res: any) => {
   res.render("spy", { title: "spy view", spies });
 };
+
 const createSpy = (req: any, res: any) => {
   const spy = req.body;
   spies.push(spy);

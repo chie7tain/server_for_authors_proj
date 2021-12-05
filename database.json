@@ -1,67 +1,116 @@
 [
   {
     "id": 1,
-    "author": "John Stone",
+    "author": "Sydney Sheldon",
+    "image": "http://4.bp.blogspot.com/-cKO0MvtkgrI/U_X5d5mjtLI/AAAAAAAAERE/kgyZqvPpxxo/s1600/Sidney%2BSheldon.jpg",
     "dateRegistered": 1637159465420,
     "age": 28,
     "address": "5, Wall Street, Buckingham",
     "books": [
       {
         "id": "book1",
-        "name": "Tomorrow is coming",
+        "name": "if tommorow comes",
+        "bookCover": "http://2.bp.blogspot.com/-De-eNbc44eE/Tv1cjNAhJ8I/AAAAAAAALxI/MnO3Kk-hDKE/w1200-h630-p-k-no-nu/If+Tomorrow+Comes+by+Sidney+Sheldon.jpg",
         "isPublished": true,
         "datePublished": 1637159508581,
         "serialNumber": "0010"
       },
       {
         "id": "book2",
-        "name": "October's very own",
-        "isPublished": false,
-        "datePublished": null,
-        "serialNumber": null
+        "name": "memories of midnight",
+        "bookCover": "http://1.bp.blogspot.com/-qxkBNI_TPnc/TprFR0T1mqI/AAAAAAAAAlc/7gNecG5hWWU/s1600/Sidney%2BSheldon-Memories%2Bof%2BMidnight.jpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "0011"
+      },
+      {
+        "id": "book3",
+        "name": "master of the game",
+        "bookCover": "https://img.bidorbuy.co.za/image/upload/v1548997989/user_images/871/1524871/190201071238_scan0002.jpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "0011"
       }
     ]
   },
   {
     "id": 2,
-    "author": "jack Stone",
+    "author": "Frank Herbert",
+    "image": "https://cdn.images.express.co.uk/img/dynamic/36/590x/secondary/frank-herbert-2794721.jpg?r=1607340171136",
     "dateRegistered": 1637159465420,
     "age": 28,
     "address": "5, Wall Street, Buckingham",
     "books": [
       {
         "id": "book1",
-        "name": "Tomorrow is coming",
+        "name": "dune",
+        "bookCover": "https://www.indiependent.co.uk/wp-content/uploads/2020/06/A1u2fY5yTL-scaled.jpg",
         "isPublished": true,
         "datePublished": 1637159508581,
         "serialNumber": "0010"
       },
       {
         "id": "book2",
-        "name": "October's very own",
-        "isPublished": false,
-        "datePublished": null,
-        "serialNumber": null
+        "name": "the shining",
+        "bookCover": "https://images1.the-dots.com/v1/952815.jpg?p=projectImageFullJpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "0011"
+      },
+      {
+        "id": "book3",
+        "name": "the catcher in the rye",
+        "bookCover": "http://media.npr.org/assets/bakertaylor/covers/c/catcher-in-the-rye/9780316769488_custom-b6fc2e108f3865eb320720875c20e4f869da8065-s6-c30.jpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "0011"
+      },
+      {
+        "id": "book4",
+        "name": "the great gatsby",
+        "bookCover": "https://cdn2.penguin.com.au/covers/original/9780857980953.jpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "0011"
       }
     ]
   },
   {
     "id": 3,
     "author": "Wilbur Smith",
+    "image": "https://i2.wp.com/images.huffingtonpost.com/2014-11-26-WilburSmithWilliamMorrow.jpg",
     "dateRegistered": 1637159465420,
     "age": 28,
     "address": "5, Wall Street, Buckingham",
     "books": [
       {
         "id": "book1",
-        "name": "Dune",
+        "name": "Triumph of the sun",
+        "bookCover": "http://d.gr-assets.com/books/1317793005l/509647.jpg",
         "isPublished": true,
         "datePublished": 1637159508581,
         "serialNumber": "121"
       },
       {
         "id": "book2",
-        "name": "Dune book two",
+        "name": "King of Kings",
+        "bookCover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781499862010/king-of-kings-9781499862010_hr.jpg",
+        "isPublished": false,
+        "datePublished": null,
+        "serialNumber": null
+      },
+      {
+        "id": "book3",
+        "name": "The last of the Mohicans",
+        "bookCover": "https://cdn.counter-currents.com/wp-content/uploads/2016/07/10.-The-Last-of-the-Mohicans.jpg",
+        "isPublished": true,
+        "datePublished": 1637159508581,
+        "serialNumber": "121"
+      },
+      {
+        "id": "book4",
+        "name": "King of Kings",
+        "bookCover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781499862010/king-of-kings-9781499862010_hr.jpg",
         "isPublished": false,
         "datePublished": null,
         "serialNumber": null

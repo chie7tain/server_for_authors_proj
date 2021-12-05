@@ -24,19 +24,6 @@ const getAllData = async (req: Request, res: Response) => {
 };
 
 const createData = async (req: Request, res: Response) => {
-  // const id = authors[authors.length - 1].id + 1;
-  // let newAuthor = { id, ...req.body };
-  // authors.push(newAuthor);
-  // fs.writeFile(pathToData, JSON.stringify(authors, null, 2), (err) => {
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     res.status(201).json({
-  //       status: "success",
-  //       data: authors,
-  //     });
-  //   }
-  // });
   let newAuthor = await Author.create(req.body);
   res.status(201).json({
     status: "success",
@@ -79,7 +66,6 @@ const updateData = async (req: Request, res: Response) => {
         books,
       } = req.body;
 
-      // console.log(authorName, dateRegistered, age, address, books);
       const authorData = {
         authorName: authorName || author.authorName,
         dateRegistered: dateRegistered || author.dateRegistered,
@@ -87,6 +73,7 @@ const updateData = async (req: Request, res: Response) => {
         ddress: address || author.address,
         books: books || author.books,
       };
+
       const updatedAuthor = await Author.update(id, authorData);
       res.status(200).json({
         status: "success",
@@ -110,9 +97,7 @@ const deleteData = async (req: Request, res: Response) => {
         message: "author not found",
       });
     } else {
-      // authors = authors.filter((author: { id: number }) => author.id !== id);
-      let r = await Author.remove(id);
-      console.log(r);
+      await Author.remove(id);
       res.status(200).json({
         status: `successfully deleted`,
         message: null,

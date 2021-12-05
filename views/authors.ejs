@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 50px;
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+
+      a {
+        color: #00b7ff;
+      }
+      .author-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 20px;
+
+      }
+      /* .author-card {
+
+      }
+      .author-image-container{
+
+      } */
+      .author-image {
+        max-width: 100%;
+        height: auto;
+      }
+      .spy-details {
+        font-size: 1.2em;
+      }
+      .book-cover{
+        max-width: 100%;
+        height: auto;
+      }
+      .book-details > li{
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    hello world | <%= title %>
+    <div class="author-card-container">
+      <% authors.forEach(author => { %>
+      <div class="author-card">
+        <div class="author-image-container">
+          <img class="author-image" src="<%=author.image%>" alt="image of <%=author.name%>" srcset="">
+        </div>
+        <h2>author name: <%= author.author %></h2>
+        <h3>Date Registered: <%= author.dateRegistered%></h3>
+        <h3 class="author-details">Author Age:<%=author.age%></h3>
+        <p class="author-address author-details"><%=author.address%></p>
+        <p class="class author-details books">
+          <ul class="book-details">
+            <% author.books.forEach(book => { %>
+            <li>
+              <img class="book-cover" src="<%=book.bookCover%>" alt="image of <%=book.name%>" srcset="">
+            </li>
+            <li><%= book.name %></li>
+            <% }) %>
+          </ul>
+        </p>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

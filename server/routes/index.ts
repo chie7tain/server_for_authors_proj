@@ -12,9 +12,4 @@ router.get(
     res.render("index", { title: "Express" });
   }
 );
-// router
-//   .route("/")
-//   .get(function (req: Request, res: Response, next: NextFunction) {
-//     res.send({ message: "Hello World!" });
-//   });
 module.exports = router;
