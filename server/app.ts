@@ -7,6 +7,7 @@ const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/authors");
 const spyRouter = require("./routes/spy");
 const displayAllAuthors = require("./routes/displayAuthors");
+const userRoutes = require("./routes/user");
 
 import express from "express";
 const app = express();
@@ -20,6 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use("/api/v1/user", userRoutes);
 app.use("/api/v1", indexRouter);
 app.use("/spy", spyRouter);
 app.use("/api/v1/authors", authorRouter);

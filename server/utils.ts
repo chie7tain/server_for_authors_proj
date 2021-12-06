@@ -1,13 +1,28 @@
 export {};
-import { writeFile, writeFileSync, appendFileSync } from "fs";
+import {
+  writeFile,
+  writeFileSync,
+  appendFileSync,
+  existsSync,
+  appendFile,
+} from "fs";
 
 import { Request, Response } from "express";
+import { defaults } from "joi";
 const path = require("path");
 
 function writeDataToFile(filepath: string, content: string) {
   try {
-    console.log("we are writing", content);
-    writeFileSync(filepath, JSON.stringify(content, null, 2));
+    if (existsSync(filepath)) {
+      writeFileSync(filepath, JSON.stringify(content, null, 2));
+    } else {
+      appendFile(filepath, content, (err) => {
+        if (err) {
+          console.log(err);
+        }
+        console.log(`${filepath} file created writen to`);
+      });
+    }
   } catch (error) {
     console.log(error);
   }

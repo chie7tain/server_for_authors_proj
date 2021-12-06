@@ -1,0 +1,122 @@
+[
+  {
+    "id": "7338d1dd-829f-488b-8e24-385c7f88e642",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "763951e5-f47a-48ca-b488-1f4288fb1be1",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "92e41a21-f516-45e6-a7f2-23fcb97b31e2",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "1118b594-c46a-4422-9120-0d035abee636",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "0df74649-9f5d-4a8f-bd53-2785098220b6",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "33730360-9e0c-4a8f-87e2-7f9844a301af",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "90eb9e11-3e53-4f61-9de8-324a44cb9b44",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "2fba1fe7-dbfd-4511-bed6-39eb7dc34a67",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "3a103fe6-a8b9-4171-8244-cd1706f00636",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "d1a3769a-806a-4e3f-8f7e-5973dc266e66",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "$2a$10$HrP0DL/sLhukJc.RyWl5He9vGyFGtjY6Nq7u.5wyOEVKDbzcgjRce",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "ecc009d6-6486-452a-b1bf-c6103cf88957",
+    "name": "James Bond",
+    "dateOfBirth": "31081991",
+    "email": "jamesbond@gmail.com",
+    "password": "$2a$10$7H32KdU22XXWbNnAhko3jOS30E0gn10VzQF14EWbcez4lTe047AJW",
+    "confirmPassword": "123456"
+  },
+  {
+    "id": "338d1ca4-d004-4255-8a7d-60ad5a224277",
+    "name": "Money penny",
+    "dateOfBirth": "31081991",
+    "email": "bamesbond@gmail.com",
+    "password": "$2a$10$WepcbkMpFNS2MFmt7kw/Mu3Lu2SSg5y8yYhVOcCO8YY7Y.fd7Y196",
+    "confirmPassword": "$2a$10$WepcbkMpFNS2MFmt7kw/Mu3Lu2SSg5y8yYhVOcCO8YY7Y.fd7Y196"
+  },
+  {
+    "id": "b29eb310-4494-4df3-9a29-25eb2b4bbc47",
+    "name": "Jet li",
+    "dateOfBirth": "31081991",
+    "email": "dragon@gmail.com",
+    "password": "$2a$10$RbyAtyzjph3oBwKK3c1JhOFERrW8YdAFzwSSPGrT3kNnO2r.n/mUq",
+    "confirmPassword": "$2a$10$RbyAtyzjph3oBwKK3c1JhOFERrW8YdAFzwSSPGrT3kNnO2r.n/mUq"
+  },
+  {
+    "id": "d1875d4f-86f8-4cc0-b74c-00b17e5888ac",
+    "name": "Chumo ke",
+    "dateOfBirth": "31081991",
+    "email": "chumonken@gmail.com",
+    "password": "$2a$10$r2Ewhd6aPAZfQ/MKx4GNDOf5cA8vYhsDbiT6/fxcB06YOTFsX0Np.",
+    "confirmPassword": "$2a$10$r2Ewhd6aPAZfQ/MKx4GNDOf5cA8vYhsDbiT6/fxcB06YOTFsX0Np."
+  },
+  {
+    "id": "c11d1482-b0e8-4ea5-996f-886e7cffcf89",
+    "name": "Jumoke",
+    "dateOfBirth": "31081991",
+    "email": "aladin@gmail.com",
+    "password": "$2a$10$xJ4F9noO6fSkQNS/Lga9EeygRQZrCZpZ2lukr2SsRjzdygllGUyMS",
+    "confirmPassword": "$2a$10$xJ4F9noO6fSkQNS/Lga9EeygRQZrCZpZ2lukr2SsRjzdygllGUyMS"
+  }
+]
