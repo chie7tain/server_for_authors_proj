@@ -118,5 +118,13 @@
     "email": "aladin@gmail.com",
     "password": "$2a$10$xJ4F9noO6fSkQNS/Lga9EeygRQZrCZpZ2lukr2SsRjzdygllGUyMS",
     "confirmPassword": "$2a$10$xJ4F9noO6fSkQNS/Lga9EeygRQZrCZpZ2lukr2SsRjzdygllGUyMS"
+  },
+  {
+    "id": "ff6895c2-b4a7-4c22-ae1b-b359412c7909",
+    "name": "fany",
+    "dateOfBirth": "31081991",
+    "email": "olajumoke@gmail.com",
+    "password": "$2a$10$sAg.SjWWOH7PDPWiZP6AhuQ2hwRLMNrxD18VcbCyMmSfqOl9VbANK",
+    "confirmPassword": "$2a$10$sAg.SjWWOH7PDPWiZP6AhuQ2hwRLMNrxD18VcbCyMmSfqOl9VbANK"
   }
 ]

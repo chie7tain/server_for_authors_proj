@@ -1,8 +1,7 @@
-import expres, { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 import bcrypt from "bcryptjs";
 const saltRounds = 10;
 const jwt = require("jsonwebtoken");
-const fs = require("fs");
 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -12,6 +11,7 @@ const { validateUser } = require("../validation/validate");
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    // we use the joi package to validate the user input
     const { error, value } = validateUser(req.body);
     if (error) {
       res.status(400).json({
