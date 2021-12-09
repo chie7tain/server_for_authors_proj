@@ -22,28 +22,3 @@ const createSpy = (req: any, res: any) => {
 router.route("/").get(displayAllSpies).post(createSpy);
 
 module.exports = router;
-
-// app.use("/", indexRouter);
-// let users: object[] = [];
-// console.log(users);
-// let user = users[0];
-
-// app.route("/").get((req: Request, res: Response) => {
-//   res.render("index", { title: "Home", users: users });
-// });
-
-// app
-//   .route("/user")
-//   .get((req: Request, res: Response, next: NextFunction) => {
-//     console.log("from get", users);
-//     res.status(200).json(users);
-//   })
-//   .post((req: Request, res: Response, next: NextFunction) => {
-//     let user = req.body;
-//     users.push(user);
-//     console.log(users);
-//     res.status(201).json({
-//       status: "success",
-//       data: user,
-//     });
-//   });

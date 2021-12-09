@@ -1,12 +1,9 @@
 import createError from "http-errors";
-import path from "path";
+
 import cookieParser from "cookie-parser";
 import logger from "morgan";
-import os from "os";
-const indexRouter = require("./routes/index");
+const viewrouter = require("./routes/views");
 const authorRouter = require("./routes/authors");
-const spyRouter = require("./routes/spy");
-const displayAllAuthors = require("./routes/displayAuthors");
 const userRoutes = require("./routes/user");
 
 import express from "express";
@@ -14,19 +11,19 @@ const app = express();
 import { Request, Response, NextFunction } from "express";
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
+// app.use("/api/v1", viewrouter);
 app.use("/api/v1/user", userRoutes);
-app.use("/api/v1", indexRouter);
-app.use("/spy", spyRouter);
-app.use("/api/v1/authors", authorRouter);
-app.use("/api/v1/displayAuthors", displayAllAuthors);
+app.use("/api/v1", authorRouter);
+
 // catch 404 and forward to error handler
 app.use(function (req: Request, res: Response, next: NextFunction) {
   next(createError(404));

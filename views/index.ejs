@@ -1,39 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        padding: 50px;
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-      }
-
-      a {
-        color: #00b7ff;
-      }
-      .user-card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 20px;
-        border: #00b7ff solid 1px;
-      }
-      .spy-card-container {
-        border: 1px solid #00b7ff;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 20px;
-      }
-      .spy-card {
-        border: 1px solid gold;
-      }
-    </style>
-  </head>
+  <%- include("./partials/head.ejs") %>
   <body>
-    <h1>hello world | welcome </h1>
-    
+    <%- include("./partials/nav.ejs") %>
+    <!-- display blogs -->
+    <div class="author-card-container">
+      <% authors.forEach(author => { %>
+      <p><%= author.author %></p>
+      <% }) %>
     </div>
+
+    <!-- footer -->
+    <%- include("./partials/footer.ejs") %>
+    <!-- end of footer -->
   </body>
 </html>

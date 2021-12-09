@@ -14,6 +14,7 @@ const Author = require("../models/authorModels");
 const getAllData = async (req: Request, res: Response) => {
   try {
     const authors = await Author.findAll();
+    res.render("index", { title: "Authors", authors: authors });
     res.status(200).json({
       status: "success",
       data: { amt: authors.length, authors },

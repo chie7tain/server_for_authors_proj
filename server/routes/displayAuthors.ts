@@ -12,5 +12,3 @@ const displayAllAuthors = (req: Request, res: Response) => {
 };
 
 router.route("/").get(displayAllAuthors);
-
-module.exports = router;

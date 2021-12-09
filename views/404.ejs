@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/headfor404.ejs', {title: '404'}) %>
+  <body>
+    <!-- main app -->
+    <section class="app">
+      <!-- header -->
+      <header class="main-heading-container">
+        <h1 class="main-heading">404 NOT FOUND</h1>
+      </header>
+      <!-- end of header -->
+      <!-- main -->
+      <main class="main-container">
+        <section class="scarecrow-img-container">
+          <img class="scarecrow-img" src="/scarecrow.png" alt="scarecrow" />
+          <!-- <figcaption>Scarecrow</figcaption> -->
+        </section>
+        <section class="message-and-btn-container">
+          <section class="message-container">
+            <h2 class="message-heading">I have bad news for you</h2>
+            <article class="message-text-container">
+              <p class="message-text">
+                The page you are looking for might be removed or is temporarily
+                unavailable.
+              </p>
+            </article>
+          </section>
+          <section class="back-btn-container">
+            <button class="back-btn">Back to homepage</button>
+          </section>
+        </section>
+      </main>
+      <!-- end of main -->
+      <!-- footer -->
+      <footer class="footer-container">
+        <p class="footer-text">created by Chie7tain - devChallenges.io</p>
+      </footer>
+      <!-- end of footer -->
+    </section>
+    <!-- end of main app-->
+  </body>
+</html>
