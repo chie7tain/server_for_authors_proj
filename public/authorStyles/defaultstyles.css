@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styles for author container */
+.all-author-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/* styles for all author image */
+.all-author-image-container {
+  width: 50%;
+}
+.all-author-image {
+  max-width: 100%;
+  height: auto;
+}
+/*end of styles for all author image */
+
+/* end styles for author container */

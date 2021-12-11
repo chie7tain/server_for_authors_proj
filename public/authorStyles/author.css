@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+.heading {
+  font-family: "Roboto", sans-serif;
+}
+.author-name {
+  font-style: italic;
+}
+.author-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.author-card {
+  display: flex;
+  flex-direction: column;
+}
+.author-image-container {
+  width: 100%;
+}
+.author-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+/* styles for book */
+.author-books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 20px;
+}
+.book-cover-container {
+  width: 80%;
+}
+.book-cover {
+  max-width: 100%;
+  height: auto;
+}
+.book-details > li {
+  list-style: none;
+}
+.book-details {
+  color: brown;
+  display: flex;
+  flex-wrap: wrap;
+}
+.book-date-published {
+  font-size: 0.9em;
+}
