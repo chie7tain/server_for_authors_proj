@@ -77,44 +77,37 @@
   },
   {
     "id": 3,
-    "author": "Wilbur Smith",
-    "image": "https://i2.wp.com/images.huffingtonpost.com/2014-11-26-WilburSmithWilliamMorrow.jpg",
+    "author": "Robert Greene",
     "dateRegistered": 1637159465420,
     "age": 28,
     "address": "5, Wall Street, Buckingham",
     "books": [
       {
         "id": "book1",
-        "name": "Triumph of the sun",
-        "bookCover": "http://d.gr-assets.com/books/1317793005l/509647.jpg",
+        "name": "Art of seduction",
         "isPublished": true,
         "datePublished": 1637159508581,
         "serialNumber": "121"
       },
       {
         "id": "book2",
-        "name": "King of Kings",
-        "bookCover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781499862010/king-of-kings-9781499862010_hr.jpg",
-        "isPublished": false,
-        "datePublished": null,
-        "serialNumber": null
-      },
-      {
-        "id": "book3",
-        "name": "The last of the Mohicans",
-        "bookCover": "https://cdn.counter-currents.com/wp-content/uploads/2016/07/10.-The-Last-of-the-Mohicans.jpg",
-        "isPublished": true,
-        "datePublished": 1637159508581,
-        "serialNumber": "121"
-      },
-      {
-        "id": "book4",
-        "name": "King of Kings",
-        "bookCover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781499862010/king-of-kings-9781499862010_hr.jpg",
+        "name": "Self Mastery",
         "isPublished": false,
         "datePublished": null,
         "serialNumber": null
       }
     ]
+  },
+  {
+    "id": 4,
+    "product-title": "ere3",
+    "product-price": "ddd",
+    "quantity": "3"
+  },
+  {
+    "id": 5,
+    "author-title": "Daniel Craig",
+    "age": "20",
+    "address": "No 7, Asajon way off lekki-epe way sangotedo"
   }
 ]

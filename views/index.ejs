@@ -3,10 +3,23 @@
   <%- include("./partials/head.ejs") %>
   <body>
     <%- include("./partials/nav.ejs") %>
-    <!-- display blogs -->
-    <div class="author-card-container">
+    <!-- display authors -->
+    <div class="all-author-card-container">
       <% authors.forEach(author => { %>
-      <p><%= author.author %></p>
+      <div class="all-author-card">
+        <div class="all-author-image-container">
+          <img
+            class="all-author-image"
+            src="<%=author.image%>"
+            alt="image of <%=author.name%>"
+            srcset=""
+          />
+        </div>
+        <h2>author name: <%= author.author %></h2>
+        <h3>Date Registered: <%= author.dateRegistered%></h3>
+        <h3 class="all-author-details">Author Age:<%=author.age%></h3>
+        <p class="all-author-address author-details"><%=author.address%></p>
+      </div>
       <% }) %>
     </div>
 

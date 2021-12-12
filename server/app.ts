@@ -1,4 +1,5 @@
 import createError from "http-errors";
+import path from "path";
 
 import cookieParser from "cookie-parser";
 import logger from "morgan";
@@ -10,15 +11,14 @@ import express from "express";
 const app = express();
 import { Request, Response, NextFunction } from "express";
 
-app.set("view engine", "ejs");
 app.use(express.static("public"));
-
+app.set("view engine", "ejs");
+// set views folder
+app.set("views", path.join(__dirname, "../views"));
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
-// app.use(express.static(path.join(__dirname, "public")));
 
 // app.use("/api/v1", viewrouter);
 app.use("/api/v1/user", userRoutes);
@@ -43,7 +43,7 @@ app.use(
 
     // render the error page
     res.status(err.status || 500);
-    res.render("error");
+    res.render("404", { title: "500" });
   }
 );
 

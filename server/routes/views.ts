@@ -14,17 +14,19 @@ import { Response, Request, NextFunction, response } from "express";
 // }
 
 /* GET home page. */
-router
-  .route("/")
-  .get(function (
+router.get(
+  "/",
+  function (
     req: Request,
     res: { render: (arg0: string, arg1: { title: string }) => void },
     next: NextFunction
   ) {
     res.render("index", { title: "home" });
-  });
+  }
+);
+
 router
-  .route("/aboutauthor")
+  .route("/authors")
   .get(function (
     req: Request,
     res: { render: (arg0: string, arg1: { title: string }) => void },
@@ -46,4 +48,5 @@ router.use(function (
 ) {
   res.status(404).render("404", { title: "Error page" });
 });
+
 module.exports = router;

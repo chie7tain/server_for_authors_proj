@@ -15,16 +15,21 @@ const getAllData = async (req: Request, res: Response) => {
   try {
     const authors = await Author.findAll();
     res.render("index", { title: "Authors", authors: authors });
-    res.status(200).json({
-      status: "success",
-      data: { amt: authors.length, authors },
-    });
+    // res.status(200).json({
+    //   status: "success",
+    //   data: { amt: authors.length, authors },
+    // });
   } catch (error) {
     console.log(error);
   }
 };
 
+export const createAuthorForm = async (req: Request, res: Response) => {
+  res.render("createauthor");
+};
+
 const createData = async (req: Request, res: Response) => {
+  console.log(req.body);
   let newAuthor = await Author.create(req.body);
   res.status(201).json({
     status: "success",
@@ -36,10 +41,15 @@ const getData = async (req: Request, res: Response) => {
   try {
     const id = +req.params.id;
     let author = await Author.findById(id);
-    res.status(200).json({
-      status: "success",
-      data: author,
-    });
+    if (!author) {
+      res.render("404", { title: "author not found" });
+    } else {
+      res.render("aboutauthor", { title: "Author", author: author });
+      res.status(200).json({
+        status: "success",
+        data: author,
+      });
+    }
   } catch (err) {
     console.log(err);
   }

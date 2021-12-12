@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/headforcreateform.ejs', {title: 'Create Author'}) %>
+  <%- include('./partials/headforcreateform.ejs', {title: 'Create Author'}) %>
   <body>
         <%- include("./partials/nav.ejs") %>
     <div class="icon-container">
@@ -18,48 +18,34 @@
       </a>
     </div>
     <div class="form-container">
-      <form action="/api/products" method="POST" data-netlify="true"  name="post-new-product" id="form">
+      <form action="/api/v1/authors" method="POST" data-netlify="true"  name="post-new-product" id="form">
         <header>
-          <h1>Post a new Item</h1>
-          <p>Just type in the fields the product info you wish to post</p>
+          <h1>Add Author</h1>
+          <p>Details of the author you want to add</p>
         </header>
         <div class="field-container" >
           <div>
-            <label for="product-title">Product Title</label>
+            <label for="author-title">full name </label>
           </div>
-          <input class="field" type="text" placeholder="Product-title" name="product-title">
+          <input class="field" type="text" placeholder="author-title" name="author-title">
         </div>
         <div class="field-container" >
           <div>
-            <label for="product-price">Product Price</label>
+            <label for="age">age</label>
           </div>
-          <input class="field"  type="text" placeholder="Product price" name="product-price">
+          <input class="field" type="text" placeholder="age" name="age">
         </div>
-        <div class="field-container">
+        <div class="field-container" >
           <div>
-            <label for="quantity">Quantity</label>
+            <label for="address">address</label>
           </div>
-          <input class="field"  type="number" placeholder="quantity" name="quantity">
+          <input class="field" type="text" placeholder="address" name="address">
         </div>
         <div class="field-container">
           <div>
             <label for="image">Image</label>
           </div>
-          <input class="field"  type="file" placeholder="Product Image">
-        </div>
-        <div class="field-container select-container">
-          <div>
-            <label>Size</label>
-          </div>
-          <select class="field " >
-            <div class="option-container">
-            <option selected>Click to Select</option>
-            <option >small</option>
-            <option>medium</option>
-            <option>large</option>
-            <option>Ex-Large</option>
-            </div>
-          </select>
+          <input class="field"  type="url" placeholder="Author image">
         </div>
         <div>
           <button class="register-btn value="Post">Post item</button>
@@ -72,7 +58,5 @@
       <!-- footer -->
     <%- include("./partials/footer.ejs") %>
     <!-- end of footer -->
-    <script src="./app.js"></script>
-    <script src="./test.js"></script>
   </body>
 </html>

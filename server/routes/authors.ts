@@ -8,15 +8,17 @@ import {
   createData,
   updateData,
   deleteData,
+  createAuthorForm,
 } from "../controllers/controllers";
 // /authors
 
-router.route("/").get(getAllData).post(auth.checkAuth, createData);
+router.route("/createauthor").get(createAuthorForm);
+router.route("/authors").get(getAllData).post(createData);
 
 // /authors:
 router
-  .route("/:id")
-  .get(getData)
+  .route("/authors/:id")
+  .get(auth.checkAuth, getData)
   .put(auth.checkAuth, updateData)
   .delete(auth.checkAuth, deleteData);
 

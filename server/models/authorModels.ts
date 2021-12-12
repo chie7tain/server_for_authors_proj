@@ -11,10 +11,8 @@ function findAll() {
 }
 function findById(id: number) {
   return new Promise((resolve, reject) => {
-    console.log(typeof id);
     const author = authors.find((author: { id: number }) => author.id === id);
     resolve(author);
-    console.log(author);
     if (!author) {
       reject(new Error("author not found"));
     } else {
@@ -51,4 +49,4 @@ function remove(id: string | number) {
     resolve("product deleted");
   });
 }
-module.exports = { findAll, findById, create, update,remove };
+module.exports = { findAll, findById, create, update, remove };

@@ -1,12 +1,12 @@
 import express, { Request, Response, NextFunction } from "express";
 const jwt = require("jsonwebtoken");
 
+interface reqObj extends Request {
+  userData: any;
+}
+
 function checkAuth(
-  req: {
-    headers: { authorization: string };
-    body: { token: any };
-    userData: any;
-  },
+  req: reqObj,
   res: {
     status: (arg0: number) => {
       (): any;
@@ -17,8 +17,9 @@ function checkAuth(
   next: () => void
 ) {
   try {
-    const token = req.headers.authorization.split(" ")[1];
-    const decoded = jwt.verify(token, "secretKey");
+    // const token = req.headers.authorization.split(" ")[1];
+    const token = req.cookies.token;
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.userData = decoded;
     next();
   } catch (error) {

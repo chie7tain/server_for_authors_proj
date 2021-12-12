@@ -3,9 +3,6 @@ import bcrypt from "bcryptjs";
 const saltRounds = 10;
 const jwt = require("jsonwebtoken");
 
-const dotenv = require("dotenv");
-dotenv.config();
-
 const User = require("../models/userModel");
 const { validateUser } = require("../validation/validate");
 
@@ -68,6 +65,7 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
           });
         }
         if (result) {
+          console.log(process.env.JWT_KEY, "jwt from env");
           const token = jwt.sign(
             {
               email: user.email,
@@ -78,10 +76,12 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
               expiresIn: "1h",
             }
           );
-          return res.status(200).json({
-            message: "Auth successfull",
-            token: token,
-          });
+          res.cookie("token", token);
+          res.redirect("/api/v1/authors");
+          // return res.status(200).json({
+          //   message: "Auth successfull",
+          //   token: token,
+          // });
         } else {
           res.status(401).json({
             message: "Auth failed",

@@ -5,6 +5,8 @@
  */
 
 var http = require("http");
+const dotenv = require("dotenv");
+dotenv.config();
 var app = require("../lib/app");
 var debug = require("debug")("week-6-task:server");
 

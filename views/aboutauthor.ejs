@@ -3,7 +3,31 @@
   <%- include("./partials/head.ejs") %>
   <body>
     <%- include("./partials/nav.ejs") %>
-    <h1>about author</h1>
+
+    <h1 class="heading">about <span class="author-name"><%= author.author %></span></h1>
+    <!-- author card -->
+    <div class="author-card-container">
+      <div class="author-card">
+        <div class="author-image-container">
+          <img class="author-image" src="<%=author.image %>" alt="" srcset="">
+        </div>
+        <div class="author-books-container">
+          <% author.books.forEach(book => { %>
+            <div class="book-card">
+              <div class="book-cover-container">
+                <img class="book-cover" src="<%= book.bookCover %>" alt="<%= book.name %>" srcset="">
+              </div>
+              <div class="book-details">
+                <p class="book-id"><%=book.id%></p>
+                <h3 class="book-name"><%= book.name%></h3>
+                <p class="book-date-published"><%=book.datePublished%></p>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+      </div>
+    </div>
   </body>
   <!-- footer -->
   <%- include("./partials/footer.ejs") %>

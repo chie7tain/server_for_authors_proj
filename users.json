@@ -126,5 +126,29 @@
     "email": "olajumoke@gmail.com",
     "password": "$2a$10$sAg.SjWWOH7PDPWiZP6AhuQ2hwRLMNrxD18VcbCyMmSfqOl9VbANK",
     "confirmPassword": "$2a$10$sAg.SjWWOH7PDPWiZP6AhuQ2hwRLMNrxD18VcbCyMmSfqOl9VbANK"
+  },
+  {
+    "id": "0dfdc0d3-ebb4-4458-a6b2-86dd5554f0a0",
+    "name": "oga ebuka",
+    "email": "ebuka@gmail.com",
+    "dateOfBirth": "20212021",
+    "password": "$2a$10$fIWmalcQiTmI2ue22OP6kuPhYZdK/Q1.TiRGP1ryygxn/a2oNU7gW",
+    "confirmPassword": "$2a$10$fIWmalcQiTmI2ue22OP6kuPhYZdK/Q1.TiRGP1ryygxn/a2oNU7gW"
+  },
+  {
+    "id": "c635195d-e588-48a8-9a6f-7eda9f576219",
+    "name": "Ifeanyi Okwuobi",
+    "email": "fredrickokwuobi@gmail.com",
+    "dateOfBirth": "31082021",
+    "password": "$2a$10$fydZ8TjVcS4amTjlECzMQ.BCdKloLk6yTN7rxxZSOBOF6..xuInaa",
+    "confirmPassword": "$2a$10$fydZ8TjVcS4amTjlECzMQ.BCdKloLk6yTN7rxxZSOBOF6..xuInaa"
+  },
+  {
+    "id": "109ec2df-4bfc-440f-907d-8f738c5b5a06",
+    "name": "chie7tain",
+    "email": "vinceLombadi@gmail.com",
+    "dateOfBirth": "31082021",
+    "password": "$2a$10$BQlmMMF9CpnhPDhrpnvfBehbNKIhAY7Q1EJhG0AaFdje6RaGiJ12i",
+    "confirmPassword": "$2a$10$BQlmMMF9CpnhPDhrpnvfBehbNKIhAY7Q1EJhG0AaFdje6RaGiJ12i"
   }
 ]
