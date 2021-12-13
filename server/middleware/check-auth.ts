@@ -5,7 +5,7 @@ interface reqObj extends Request {
   userData: any;
 }
 
-function checkAuth(
+export function checkAuth(
   req: reqObj,
   res: {
     status: (arg0: number) => {
@@ -17,9 +17,12 @@ function checkAuth(
   next: () => void
 ) {
   try {
+    console.log("in auth middleware");
     // const token = req.headers.authorization.split(" ")[1];
     const token = req.cookies.token;
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    const decoded = jwt.verify(token, "secret_key");
+    console.log(decoded);
     req.userData = decoded;
     next();
   } catch (error) {
@@ -28,5 +31,3 @@ function checkAuth(
     });
   }
 }
-
-export { checkAuth };

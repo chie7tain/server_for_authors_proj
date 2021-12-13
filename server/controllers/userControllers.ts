@@ -71,7 +71,8 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
               email: user.email,
               userId: user.id,
             },
-            "secretKey",
+            // process.env.JWT_KEY,
+            "secret_key",
             {
               expiresIn: "1h",
             }
@@ -84,6 +85,7 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
           // });
         } else {
           res.status(401).json({
+            status: "from userController",
             message: "Auth failed",
           });
         }

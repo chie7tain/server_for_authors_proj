@@ -109,5 +109,13 @@
     "author-title": "Daniel Craig",
     "age": "20",
     "address": "No 7, Asajon way off lekki-epe way sangotedo"
+  },
+  {
+    "id": 7,
+    "author": "akin thomas",
+    "age": "21",
+    "dateRegistered": "1881-09-12",
+    "address": "decagon",
+    "image": "https://media.gettyimages.com/photos/american-actor-mark-hamill-on-the-set-of-star-wars-episode-iv-a-new-picture-id607402186?s=2048x2048"
   }
 ]

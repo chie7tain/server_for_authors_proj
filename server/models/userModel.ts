@@ -9,7 +9,6 @@ let users = JSON.parse(readFileSync(pathToUserData, "utf-8")) || [];
 const { writeDataToFile } = require("../utils");
 
 function create(user: object[]) {
-  console.log("user", user);
   return new Promise((resolve, reject) => {
     const newUser = { id: uuidv4(), ...user };
     users.push(newUser);

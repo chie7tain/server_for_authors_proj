@@ -1,6 +1,5 @@
 export {};
 let router = require("express").Router();
-const auth = require("../middleware/check-auth");
 
 import {
   getAllData,
@@ -10,17 +9,18 @@ import {
   deleteData,
   createAuthorForm,
 } from "../controllers/controllers";
+import { checkAuth } from "../middleware/check-auth";
 // /authors
 
-router.route("/createauthor").get(createAuthorForm);
-router.route("/authors").get(getAllData).post(createData);
+router.route("/createauthor").get(checkAuth, createAuthorForm);
+router.route("/authors").get(getAllData).post(checkAuth, createData);
 
 // /authors:
 router
   .route("/authors/:id")
-  .get(auth.checkAuth, getData)
-  .put(auth.checkAuth, updateData)
-  .delete(auth.checkAuth, deleteData);
+  .get(checkAuth, getData)
+  .put(checkAuth, updateData)
+  .delete(checkAuth, deleteData);
 
 router.use(function (
   req: Request,

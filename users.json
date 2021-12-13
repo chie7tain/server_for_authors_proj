@@ -150,5 +150,29 @@
     "dateOfBirth": "31082021",
     "password": "$2a$10$BQlmMMF9CpnhPDhrpnvfBehbNKIhAY7Q1EJhG0AaFdje6RaGiJ12i",
     "confirmPassword": "$2a$10$BQlmMMF9CpnhPDhrpnvfBehbNKIhAY7Q1EJhG0AaFdje6RaGiJ12i"
+  },
+  {
+    "id": "6f03999f-cf6d-486a-8ad4-2f407f410685",
+    "name": "chie7tain",
+    "email": "lombadi@gmail.com",
+    "dateOfBirth": "31082021",
+    "password": "$2a$10$E4TRHWRoW/1FOgmR2unAkOsxNRveBEsmb87N02fO5r5DKqRwiDe7.",
+    "confirmPassword": "$2a$10$E4TRHWRoW/1FOgmR2unAkOsxNRveBEsmb87N02fO5r5DKqRwiDe7."
+  },
+  {
+    "id": "db1dbc27-4550-42cd-b990-92af351ceca4",
+    "name": "akingbade",
+    "email": "akin@gmail.com",
+    "dateOfBirth": "19910101",
+    "password": "$2a$10$UFfOdrFENuskpwvwxfSdLepoHr3aETPE5sZCAtNe72m9pQuqUT5Ya",
+    "confirmPassword": "$2a$10$UFfOdrFENuskpwvwxfSdLepoHr3aETPE5sZCAtNe72m9pQuqUT5Ya"
+  },
+  {
+    "id": "ed93018a-1d36-4b89-872f-18dd8435f25c",
+    "name": "bad man",
+    "email": "badman@gmail.com",
+    "dateOfBirth": "19910101",
+    "password": "$2a$10$/49vBezUjiMvLfkas54DxO98BYymbKTpC.mkEgwQWpS8xVTnosfQ6",
+    "confirmPassword": "$2a$10$/49vBezUjiMvLfkas54DxO98BYymbKTpC.mkEgwQWpS8xVTnosfQ6"
   }
 ]
