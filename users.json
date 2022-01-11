@@ -174,5 +174,13 @@
     "dateOfBirth": "19910101",
     "password": "$2a$10$/49vBezUjiMvLfkas54DxO98BYymbKTpC.mkEgwQWpS8xVTnosfQ6",
     "confirmPassword": "$2a$10$/49vBezUjiMvLfkas54DxO98BYymbKTpC.mkEgwQWpS8xVTnosfQ6"
+  },
+  {
+    "id": "5c50aff5-4923-4995-93ab-c7a1015b70a1",
+    "name": "hassan",
+    "email": "hassan@gmail.com",
+    "dateOfBirth": "19910101",
+    "password": "$2a$10$7LosCgHxlADpULsunlGDXOZrD4PQiB2b70V1mzGnq1g8EwT9Yq8Oy",
+    "confirmPassword": "$2a$10$7LosCgHxlADpULsunlGDXOZrD4PQiB2b70V1mzGnq1g8EwT9Yq8Oy"
   }
 ]

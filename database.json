@@ -117,5 +117,13 @@
     "dateRegistered": "1881-09-12",
     "address": "decagon",
     "image": "https://media.gettyimages.com/photos/american-actor-mark-hamill-on-the-set-of-star-wars-episode-iv-a-new-picture-id607402186?s=2048x2048"
+  },
+  {
+    "id": 8,
+    "author": "odochi okara",
+    "age": "21",
+    "dateRegistered": "1992-08-31",
+    "address": "portharcourt",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hivisasa.com%2F1200%2FIt9Rrm02rE20.jpg&f=1&nofb=1"
   }
 ]

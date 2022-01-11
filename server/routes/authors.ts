@@ -12,8 +12,8 @@ import {
 import { checkAuth } from "../middleware/check-auth";
 // /authors
 
-router.route("/createauthor").get(checkAuth, createAuthorForm);
-router.route("/authors").get(getAllData).post(checkAuth, createData);
+router.route("/createauthor").get(createAuthorForm);
+router.route("/authors").get(getAllData).post(createData);
 
 // /authors:
 router
