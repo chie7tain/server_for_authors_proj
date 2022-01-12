@@ -12,8 +12,8 @@ export const validateUser = (user: Record<string, any>) => {
 };
 export const validateAuthor = (author: Record<string, any>) => {
   const authorSchema: Schema = Joi.object({
-    name: Joi.string().min(3).max(50).required(),
-    dateRegistered: Joi.date().required(),
+    author: Joi.string().min(3).max(50).required(),
+    dateRegistered: Joi.date().timestamp(),
     age: Joi.number().min(1).max(180).required(),
     address: Joi.string().required().error(new Error("Address required")),
     books: Joi.array().items(
@@ -33,8 +33,8 @@ export const validateAuthor = (author: Record<string, any>) => {
 };
 export function validateAuthorDetails(author: Record<string, any>) {
   const authorSchema: Schema = Joi.object({
-    name: Joi.string().min(3).max(50).required(),
-    dateRegistered: Joi.date().required(),
+    author: Joi.string().min(3).max(50).required(),
+    dateRegistered: Joi.date(),
     age: Joi.number().min(1).max(180).required(),
     address: Joi.string().required().error(new Error("Address required")),
   });

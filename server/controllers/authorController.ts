@@ -1,16 +1,20 @@
-
 import { Request, Response } from "express";
 
-const Author = require("../models/authorModels");
+const Author = require("../models/authorModel");
+import { validateAuthor, validateAuthorDetails } from "../validation/validate";
 
 // read data
 // CONTROLLERS
 const getAllAuthors = async (req: Request, res: Response) => {
   try {
-    // const authors = await Author.findAll();
-    // res.render("index", { title: "Authors", authors: authors });
+    const authors = await Author.find();
+    res.status(200).json({
+      status: "success",
+      data: authors,
+    });
   } catch (error) {
     console.log(error);
+    res.status(400).json({ status: "fail", message: error });
   }
 };
 
@@ -18,69 +22,66 @@ export const createAuthorForm = async (req: Request, res: Response) => {
   res.render("createauthor");
 };
 
-const createAuthor = async (req: Request, res: Response) => {};
+const createAuthor = async (req: Request, res: Response) => {
+  try {
+    const { error, value } = validateAuthorDetails(req.body);
+    if (error) {
+      res.status(400).json({ message: error.details[0].message });
+    } else {
+      console.log(value);
+      const newAuthor = await Author.create(value);
+
+      res.status(201).json({
+        status: "success",
+        data: {
+          author: newAuthor,
+        },
+      });
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(400).json({ status: "fail", message: err });
+  }
+};
 
 const getAuthor = async (req: Request, res: Response) => {
   try {
-    const id = +req.params.id;
-
-    // let author = await Author.findById(id);
-    // if (!author) {
-    //   res.render("404", { title: "author not found" });
-    // } else {
-    //   res.render("aboutauthor", { title: "Author", author: author });
-    //   res.status(200).json({
-    //     status: "success",
-    //     data: author,
-    //   });
-    // }
+    const author = await Author.findById(req.params.id);
+    res.status(200).json({
+      message: "author found",
+      data: author,
+    });
   } catch (err) {
     console.log(err);
+    res.status(404).json({ status: "fail", message: err });
   }
 };
 
 const updateAuthor = async (req: Request, res: Response) => {
   try {
-    // console.log(req.body);
-    // let id = +req.params.id;
-    // // let author = authors.find((author: { id: string }) => author.id == id);
-    // let author = await Author.findById(id);
-    // console.log("from update", author);
-    // if (!author) {
-    //   res.status(404).json({
-    //     status: "fail",
-    //     message: "author not found",
-    //   });
-    // } else {
-    //   let {
-    //     author: authorName,
-    //     dateRegistered,
-    //     age,
-    //     address,
-    //     books,
-    //   } = req.body;
-    //   const authorData = {
-    //     authorName: authorName || author.authorName,
-    //     dateRegistered: dateRegistered || author.dateRegistered,
-    //     age: age || author.age,
-    //     ddress: address || author.address,
-    //     books: books || author.books,
-    //   };
-    //   const updatedAuthor = await Author.update(id, authorData);
-    //   res.status(200).json({
-    //     status: "success",
-    //     data: updatedAuthor,
-    //   });
-    // }
+    const updatedAuthor = await Author.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+    res.status(200).json({
+      status: "success",
+      data: {
+        updatedAuthor,
+      },
+    });
   } catch (error) {
     console.log(error);
+    res.status(400).json({ status: "fail", message: error });
   }
 };
 
 const deleteAuthor = async (req: Request, res: Response) => {
   try {
-    let id = +req.params.id;
-
+    await Author.findByIdAndDelete(req.params.id)
     res.status(200).json({
       status: `successfully deleted`,
       message: null,

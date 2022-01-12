@@ -13,13 +13,13 @@ import { checkAuth } from "../middleware/check-auth";
 
 // router.route("/createauthor").get(createAuthorForm);
 router.route("/authors").get(getAllAuthors).post(createAuthor);
-
+ 
 // /authors:
 router
   .route("/authors/:id")
-  .get(checkAuth, getAuthor)
-  .put(checkAuth, updateAuthor)
-  .delete(checkAuth, deleteAuthor);
+  .get(getAuthor)
+  .patch(updateAuthor)
+  .delete(deleteAuthor);
 
 router.use(function (
   req: Request,
