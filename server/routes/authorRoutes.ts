@@ -2,25 +2,24 @@ export {};
 let router = require("express").Router();
 
 import {
-  getAllData,
-  getData,
-  createData,
-  updateData,
-  deleteData,
-  createAuthorForm,
-} from "../controllers/controllers";
+  createAuthor,
+  getAuthor,
+  getAllAuthors,
+  updateAuthor,
+  deleteAuthor,
+} from "../controllers/authorController";
 import { checkAuth } from "../middleware/check-auth";
 // /authors
 
-router.route("/createauthor").get(createAuthorForm);
-router.route("/authors").get(getAllData).post(createData);
+// router.route("/createauthor").get(createAuthorForm);
+router.route("/authors").get(getAllAuthors).post(createAuthor);
 
 // /authors:
 router
   .route("/authors/:id")
-  .get(checkAuth, getData)
-  .put(checkAuth, updateData)
-  .delete(checkAuth, deleteData);
+  .get(checkAuth, getAuthor)
+  .put(checkAuth, updateAuthor)
+  .delete(checkAuth, deleteAuthor);
 
 router.use(function (
   req: Request,

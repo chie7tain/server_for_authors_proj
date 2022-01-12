@@ -4,7 +4,7 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 const viewrouter = require("./routes/views");
-const authorRouter = require("./routes/authors");
+const authorRouter = require("./routes/authorsRoutes");
 const userRoutes = require("./routes/user");
 
 import express from "express";

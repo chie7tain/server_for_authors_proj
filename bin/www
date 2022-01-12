@@ -37,19 +37,7 @@ mongoose
 // "address" : "5, Wall Street, Buckingham",
 // "createdAt": "2021-08-26T09:12:53.752Z",
 // "updatedAt": "2021-08-26T09:12:53.752Z",
-const authorSchema = new mongoose.Schema({
-  author: {
-    type: String,
-    required: [true, "an Author must have a name or a pseudoname"],
-    unique: true,
-  },
-  age: Number,
-  address: String,
-  createdAt: Number,
-  updatedAt: Number,
-});
 
-const Author = mongoose.model("Author", authorSchema);
 /**
  * Normalize a port into a number, string, or false.
  */
