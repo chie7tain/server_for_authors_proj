@@ -1,7 +1,7 @@
 export {};
 const mongoose = require("mongoose");
 
-const bookSchema = new mongoose.schema({
+const bookSchema = new mongoose.Schema({
   // link to authorSchema
   title: {
     type: String,
@@ -21,15 +21,13 @@ const bookSchema = new mongoose.schema({
   },
   publisher: {
     type: String,
-    required: [true, "Publisher is required"],
   },
   pages: {
     type: Number,
     required: [true, "Pages is required"],
   },
-  image: {
+  coverImage: {
     type: String,
-    required: [true, "Image is required"],
   },
   isPublished: Boolean,
   datePublished: Date,

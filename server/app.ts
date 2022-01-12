@@ -5,7 +5,8 @@ import cookieParser from "cookie-parser";
 import logger from "morgan";
 const viewrouter = require("./routes/views");
 const authorRouter = require("./routes/authorRoutes");
-const userRoutes = require("./routes/user");
+const bookRouter = require("./routes/bookRoutes");
+const userRouter = require("./routes/user");
 
 import express from "express";
 const app = express();
@@ -21,8 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // app.use("/api/v1", viewrouter);
-app.use("/api/v1/user", userRoutes);
-app.use("/api/v1", authorRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/authors", authorRouter);
+app.use("/api/v1/books", bookRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req: Request, res: Response, next: NextFunction) {

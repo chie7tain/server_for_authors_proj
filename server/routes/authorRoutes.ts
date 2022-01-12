@@ -12,14 +12,10 @@ import { checkAuth } from "../middleware/check-auth";
 // /authors
 
 // router.route("/createauthor").get(createAuthorForm);
-router.route("/authors").get(getAllAuthors).post(createAuthor);
- 
+router.route("/").get(getAllAuthors).post(createAuthor);
+
 // /authors:
-router
-  .route("/authors/:id")
-  .get(getAuthor)
-  .patch(updateAuthor)
-  .delete(deleteAuthor);
+router.route("/:id").get(getAuthor).patch(updateAuthor).delete(deleteAuthor);
 
 router.use(function (
   req: Request,

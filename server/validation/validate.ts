@@ -40,16 +40,18 @@ export function validateAuthorDetails(author: Record<string, any>) {
   });
   return authorSchema.validate(author);
 }
-export function validateAuthorBook(book: Record<string, any>) {
+
+export function validateBook(book: Record<string, any>) {
   const bookSchema: Schema = Joi.object({
-    id: Joi.string()
-      .alphanum()
-      .required()
-      .regex(/^[0-9a-fA-F]{24}$/),
-    name: Joi.string().min(3).max(50).required(),
+    author: Joi.string().max(50).required(),
+    publisher: Joi.string().max(50),
+    description: Joi.string().max(255),
+    genre: Joi.string().max(50),
+    pages: Joi.number().min(1).max(10000),
+    title: Joi.string().min(3).max(50).required(),
     isPublished: Joi.boolean().required(),
     datePublished: Joi.date().required(),
-    serialNumber: Joi.string().alphanum().required(),
+    serialNumber: Joi.string().alphanum(),
   });
   return bookSchema.validate(book);
 }
