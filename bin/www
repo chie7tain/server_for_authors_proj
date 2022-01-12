@@ -13,13 +13,13 @@ const debug = require("debug")("week-6-task:server");
 
 const app = require("../lib/app");
 
-const DB = process.env.DATABASE.replace(
-  "<PASSWORD>",
-  process.env.DATABASE_PASSWORD
-);
-
+// const DB = process.env.DATABASE.replace(
+//   "<PASSWORD>",
+//   process.env.DATABASE_PASSWORD
+// );
+const localDB = process.env.DATABASE_LOCAL;
 mongoose
-  .connect(DB, {
+  .connect(localDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
