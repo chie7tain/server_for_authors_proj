@@ -15,7 +15,7 @@ import { checkAuth } from "../middleware/check-auth";
 router.route("/").get(getAllAuthors).post(createAuthor);
 
 // /authors:
-router.route("/:id").get(getAuthor).patch(updateAuthor).delete(deleteAuthor);
+router.route("/:id").get(getAuthor).put(updateAuthor).delete(deleteAuthor);
 
 router.use(function (
   req: Request,

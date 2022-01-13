@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 // const Author = require("../models/authorModel");
-const { Author } = require("../models/authorBookModel");
+const Author = require("../models/authorModel");
 import { validateAuthor, validateAuthorDetails } from "../validation/validate";
 
 // read data
@@ -10,12 +10,14 @@ const getAllAuthors = async (req: Request, res: Response) => {
   try {
     // BUILD QUERY
     // 1a). Filtering
+
     const queryObj = { ...req.query };
     const excludedFields = ["page", "sort", "limit", "fields"];
     excludedFields.forEach((el) => delete queryObj[el]);
     // 1b). Advanced Filtering
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+
     let query = Author.find(JSON.parse(queryStr));
 
     // 2). Sorting
@@ -26,6 +28,15 @@ const getAllAuthors = async (req: Request, res: Response) => {
       query = query.sort(sortBy);
     } else {
       query = query.sort("--createdAt");
+    }
+
+    // 3). Field Limiting
+    if (req.query.fields) {
+      req.query.fields = String(req.query.fields);
+      const fields = req.query.fields.split(",").join(" ");
+      query = query.select(fields);
+    } else {
+      query = query.select("-__v");
     }
     // EXECUTE THE QUERY
     const authors = await query;
@@ -82,6 +93,7 @@ const getAuthor = async (req: Request, res: Response) => {
 
 const updateAuthor = async (req: Request, res: Response) => {
   try {
+    console.log(req.params.id);
     const updatedAuthor = await Author.findByIdAndUpdate(
       req.params.id,
       req.body,

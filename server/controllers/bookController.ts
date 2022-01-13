@@ -1,5 +1,5 @@
 // const Book = require("../models/bookModel");
-const { Book } = require("../models/authorBookModel");
+const Book = require("../models/bookModel");
 import { validateBook } from "../validation/validate";
 import { Request, Response } from "express";
 
