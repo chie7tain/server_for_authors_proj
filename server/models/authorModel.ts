@@ -8,7 +8,6 @@ const authorSchema = new mongoose.Schema({
   },
   age: Number,
   address: String,
-  books: [Array],
   createdAt: {
     type: Date,
     default: Date.now(),
