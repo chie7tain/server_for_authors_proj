@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const authorSchema = new mongoose.Schema({
   author: {
     type: String,
-    unique: true,
-    required: [true, "an Author should have a name or pseudoname"],
+    required: [true, "an Author should have a name"],
   },
   age: Number,
   address: String,

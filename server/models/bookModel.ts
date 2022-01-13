@@ -3,39 +3,21 @@ const mongoose = require("mongoose");
 
 const bookSchema = new mongoose.Schema({
   // link to authorSchema
-  author: {
+  author_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Author",
   },
-  title: {
+  book_name: {
     type: String,
     required: [true, "Title is required"],
   },
-  // author: {
-  //   type: String,
-  //   required: [true, "Author is required"],
-  // },
-  genre: {
+  author_name: {
     type: String,
-    required: [true, "Genre is required"],
+    required: [true, "Author is required"],
   },
-  description: {
-    type: String,
-    required: [true, "Description is required"],
-  },
-  publisher: {
-    type: String,
-  },
-  pages: {
-    type: Number,
-    required: [true, "Pages is required"],
-  },
-  coverImage: {
-    type: String,
-  },
-  isPublished: Boolean,
-  datePublished: Date,
-  serialNumber: String,
+  published_status: Boolean,
+  date_published: Date,
+  serial_number: Number,
   createdAt: {
     type: Date,
     default: Date.now(),

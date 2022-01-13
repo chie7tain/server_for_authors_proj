@@ -1,0 +1,802 @@
+[
+  {
+    "book_name": "Cord (Hide and Seek)",
+    "author_name": "Wanids Fergie",
+    "published_status": true,
+    "serial_number": "1166806642",
+    "date_published": "7/4/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000c8" }
+  },
+  {
+    "book_name": "Long Good Friday, The",
+    "author_name": "Junie Ledley",
+    "published_status": true,
+    "serial_number": "4320186923",
+    "date_published": "4/26/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000c9" }
+  },
+  {
+    "book_name": "Death of a Nation - The Timor Conspiracy",
+    "author_name": "Dasya Teese",
+    "published_status": false,
+    "serial_number": "8705138361",
+    "date_published": "8/24/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ca" }
+  },
+  {
+    "book_name": "Trouble the Water",
+    "author_name": "Carie Moehler",
+    "published_status": true,
+    "serial_number": "6050283664",
+    "date_published": "3/29/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000cb" }
+  },
+  {
+    "book_name": "On the Ice",
+    "author_name": "Amabelle Bowes",
+    "published_status": true,
+    "serial_number": "5413411170",
+    "date_published": "12/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000cc" }
+  },
+  {
+    "book_name": "Phantom of the Megaplex",
+    "author_name": "Margaret Duffet",
+    "published_status": false,
+    "serial_number": "0854235108",
+    "date_published": "6/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000cd" }
+  },
+  {
+    "book_name": "The Sky Dragon",
+    "author_name": "Lydie Daice",
+    "published_status": false,
+    "serial_number": "7128576738",
+    "date_published": "1/5/2022",
+    "author_id": { "$oid": "61e09900fc13ae69170000ce" }
+  },
+  {
+    "book_name": "Fargo",
+    "author_name": "Edna Wall",
+    "published_status": true,
+    "serial_number": "8505704916",
+    "date_published": "9/23/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000cf" }
+  },
+  {
+    "book_name": "Amityville Curse, The",
+    "author_name": "Lexi Frensch",
+    "published_status": true,
+    "serial_number": "1721182276",
+    "date_published": "7/14/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d0" }
+  },
+  {
+    "book_name": "Tali-Ihantala 1944",
+    "author_name": "Emlyn Gillopp",
+    "published_status": false,
+    "serial_number": "4498800133",
+    "date_published": "11/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d1" }
+  },
+  {
+    "book_name": "After Fall, Winter",
+    "author_name": "Ashly Instock",
+    "published_status": false,
+    "serial_number": "9718409289",
+    "date_published": "12/2/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d2" }
+  },
+  {
+    "book_name": "Holy Smoke",
+    "author_name": "Robbie Colisbe",
+    "published_status": false,
+    "serial_number": "9330923194",
+    "date_published": "3/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d3" }
+  },
+  {
+    "book_name": "It's a Very Merry Muppet Christmas Movie",
+    "author_name": "Thedric Jozef",
+    "published_status": false,
+    "serial_number": "0369933907",
+    "date_published": "12/2/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d4" }
+  },
+  {
+    "book_name": "Crash Reel, The",
+    "author_name": "Tedie Dow",
+    "published_status": true,
+    "serial_number": "7733008573",
+    "date_published": "3/28/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d5" }
+  },
+  {
+    "book_name": "Dr. Goldfoot and the Girl Bombs (Le spie vengono dal semifreddo)",
+    "author_name": "Marty Bredbury",
+    "published_status": false,
+    "serial_number": "9235001293",
+    "date_published": "2/7/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d6" }
+  },
+  {
+    "book_name": "Discreet Charm of the Bourgeoisie, The (Charme discret de la bourgeoisie, Le)",
+    "author_name": "Matt Speight",
+    "published_status": false,
+    "serial_number": "1685691560",
+    "date_published": "7/29/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d7" }
+  },
+  {
+    "book_name": "OSS 117 - Lost in Rio (OSS 117: Rio ne répond plus)",
+    "author_name": "Alley Buttrum",
+    "published_status": false,
+    "serial_number": "5348493104",
+    "date_published": "5/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d8" }
+  },
+  {
+    "book_name": "Monty Python and the Holy Grail",
+    "author_name": "Dmitri Gianettini",
+    "published_status": true,
+    "serial_number": "6636672668",
+    "date_published": "1/31/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000d9" }
+  },
+  {
+    "book_name": "Racing Stripes",
+    "author_name": "Shalom Stickley",
+    "published_status": false,
+    "serial_number": "9605302152",
+    "date_published": "9/28/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000da" }
+  },
+  {
+    "book_name": "Pekka ja Pätkä salapoliiseina",
+    "author_name": "Mellie Mc Coughan",
+    "published_status": false,
+    "serial_number": "2255126974",
+    "date_published": "10/12/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000db" }
+  },
+  {
+    "book_name": "Frankenfish",
+    "author_name": "Norbie Surfleet",
+    "published_status": true,
+    "serial_number": "6614516892",
+    "date_published": "7/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000dc" }
+  },
+  {
+    "book_name": "Addicted to Love",
+    "author_name": "Clarette Shoulder",
+    "published_status": false,
+    "serial_number": "8257721085",
+    "date_published": "4/15/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000dd" }
+  },
+  {
+    "book_name": "Mercy ",
+    "author_name": "Briano Philippsohn",
+    "published_status": false,
+    "serial_number": "6310857525",
+    "date_published": "1/21/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000de" }
+  },
+  {
+    "book_name": "My Name Is Nobody (Il Mio nome è Nessuno)",
+    "author_name": "Raff Ferreira",
+    "published_status": true,
+    "serial_number": "3235573003",
+    "date_published": "12/2/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000df" }
+  },
+  {
+    "book_name": "30 Days of Night",
+    "author_name": "Berkie Keysall",
+    "published_status": true,
+    "serial_number": "2206204630",
+    "date_published": "5/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e0" }
+  },
+  {
+    "book_name": "The Mysterious Island",
+    "author_name": "Reeva Leindecker",
+    "published_status": true,
+    "serial_number": "0956278906",
+    "date_published": "1/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e1" }
+  },
+  {
+    "book_name": "I Travel Alone",
+    "author_name": "Selig Sones",
+    "published_status": true,
+    "serial_number": "8325281235",
+    "date_published": "7/27/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e2" }
+  },
+  {
+    "book_name": "Tomorrow, the World!",
+    "author_name": "Papageno Bothams",
+    "published_status": false,
+    "serial_number": "8434691140",
+    "date_published": "1/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e3" }
+  },
+  {
+    "book_name": "Asylum",
+    "author_name": "Gwenni Duggon",
+    "published_status": false,
+    "serial_number": "3984458436",
+    "date_published": "7/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e4" }
+  },
+  {
+    "book_name": "Trilogy of Terror",
+    "author_name": "Nealy Bain",
+    "published_status": false,
+    "serial_number": "7111197097",
+    "date_published": "4/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e5" }
+  },
+  {
+    "book_name": "Godzilla (Gojira)",
+    "author_name": "Wain Josephson",
+    "published_status": false,
+    "serial_number": "4015829530",
+    "date_published": "10/2/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e6" }
+  },
+  {
+    "book_name": "Last Days, The (Últimos días, Los)",
+    "author_name": "Lisha Chambers",
+    "published_status": false,
+    "serial_number": "3637765365",
+    "date_published": "9/4/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e7" }
+  },
+  {
+    "book_name": "Miracle Worker, The",
+    "author_name": "Thomasina Heazel",
+    "published_status": true,
+    "serial_number": "0116880732",
+    "date_published": "4/1/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e8" }
+  },
+  {
+    "book_name": "Kings of Summer, The",
+    "author_name": "Kailey Blondel",
+    "published_status": true,
+    "serial_number": "6640346966",
+    "date_published": "5/4/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000e9" }
+  },
+  {
+    "book_name": "Dracula: Dead and Loving It",
+    "author_name": "Philomena Wildman",
+    "published_status": false,
+    "serial_number": "9994359002",
+    "date_published": "8/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ea" }
+  },
+  {
+    "book_name": "September",
+    "author_name": "Hildagarde Jeanet",
+    "published_status": true,
+    "serial_number": "6300279480",
+    "date_published": "11/24/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000eb" }
+  },
+  {
+    "book_name": "My House in Umbria",
+    "author_name": "Raffarty Dufton",
+    "published_status": true,
+    "serial_number": "5213426204",
+    "date_published": "2/3/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ec" }
+  },
+  {
+    "book_name": "Day & Night",
+    "author_name": "Patrice Dragoe",
+    "published_status": true,
+    "serial_number": "1723115878",
+    "date_published": "5/3/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ed" }
+  },
+  {
+    "book_name": "Rid of Me",
+    "author_name": "Briano Darco",
+    "published_status": true,
+    "serial_number": "6407569435",
+    "date_published": "8/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ee" }
+  },
+  {
+    "book_name": "Dance, Girl, Dance",
+    "author_name": "Aylmer Weldrake",
+    "published_status": false,
+    "serial_number": "8780899099",
+    "date_published": "12/3/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ef" }
+  },
+  {
+    "book_name": "Inauguration of the Pleasure Dome",
+    "author_name": "Coleman Duester",
+    "published_status": false,
+    "serial_number": "9113926152",
+    "date_published": "12/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f0" }
+  },
+  {
+    "book_name": "Invaders from Mars",
+    "author_name": "Glynnis Greasley",
+    "published_status": true,
+    "serial_number": "5410947282",
+    "date_published": "11/10/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f1" }
+  },
+  {
+    "book_name": "Spencer's Mountain",
+    "author_name": "Alic Killelay",
+    "published_status": false,
+    "serial_number": "7397466729",
+    "date_published": "10/21/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f2" }
+  },
+  {
+    "book_name": "Don Quixote",
+    "author_name": "Zechariah Vieyra",
+    "published_status": false,
+    "serial_number": "3048232885",
+    "date_published": "7/5/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f3" }
+  },
+  {
+    "book_name": "His Regeneration",
+    "author_name": "Shayne De Brett",
+    "published_status": true,
+    "serial_number": "6118558434",
+    "date_published": "12/7/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f4" }
+  },
+  {
+    "book_name": "Tin Cup",
+    "author_name": "Archer Scarlan",
+    "published_status": false,
+    "serial_number": "6412938222",
+    "date_published": "12/31/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f5" }
+  },
+  {
+    "book_name": "Golden Bowl, The",
+    "author_name": "Silvia Chatwood",
+    "published_status": false,
+    "serial_number": "5853725262",
+    "date_published": "3/8/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f6" }
+  },
+  {
+    "book_name": "Honey",
+    "author_name": "Moira Newbury",
+    "published_status": true,
+    "serial_number": "5656620417",
+    "date_published": "1/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f7" }
+  },
+  {
+    "book_name": "Perfect",
+    "author_name": "Teddy Kupper",
+    "published_status": false,
+    "serial_number": "6318570101",
+    "date_published": "6/18/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f8" }
+  },
+  {
+    "book_name": "Let It Be",
+    "author_name": "Trefor Purdom",
+    "published_status": false,
+    "serial_number": "2920996185",
+    "date_published": "6/3/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000f9" }
+  },
+  {
+    "book_name": "Failan",
+    "author_name": "Jewell Chapelle",
+    "published_status": true,
+    "serial_number": "8695694151",
+    "date_published": "7/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000fa" }
+  },
+  {
+    "book_name": "Alien Nation: Dark Horizon",
+    "author_name": "Salvador MacGinlay",
+    "published_status": true,
+    "serial_number": "7614556402",
+    "date_published": "9/10/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000fb" }
+  },
+  {
+    "book_name": "Rain Over Santiago (Il pleut sur Santiago)",
+    "author_name": "Ramonda Chomicki",
+    "published_status": false,
+    "serial_number": "9321601554",
+    "date_published": "12/7/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000fc" }
+  },
+  {
+    "book_name": "Angel Eyes",
+    "author_name": "Yardley Heinzel",
+    "published_status": true,
+    "serial_number": "0700909826",
+    "date_published": "6/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000fd" }
+  },
+  {
+    "book_name": "Free Samples",
+    "author_name": "Maurise Knuckles",
+    "published_status": false,
+    "serial_number": "3413904973",
+    "date_published": "11/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000fe" }
+  },
+  {
+    "book_name": "White God (Fehér isten)",
+    "author_name": "Chan De Biasio",
+    "published_status": false,
+    "serial_number": "1658248007",
+    "date_published": "3/17/2021",
+    "author_id": { "$oid": "61e09900fc13ae69170000ff" }
+  },
+  {
+    "book_name": "Sister Kenny",
+    "author_name": "Kikelia Macon",
+    "published_status": true,
+    "serial_number": "3536705383",
+    "date_published": "3/12/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000100" }
+  },
+  {
+    "book_name": "Better Tomorrow, A (Ying hung boon sik)",
+    "author_name": "Crissy Else",
+    "published_status": true,
+    "serial_number": "3613888408",
+    "date_published": "11/17/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000101" }
+  },
+  {
+    "book_name": "Repo Man",
+    "author_name": "Elfrida Ivanovic",
+    "published_status": true,
+    "serial_number": "8681404822",
+    "date_published": "12/9/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000102" }
+  },
+  {
+    "book_name": "Chato's Land",
+    "author_name": "Garik Kenn",
+    "published_status": true,
+    "serial_number": "4964227766",
+    "date_published": "10/5/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000103" }
+  },
+  {
+    "book_name": "Devdas",
+    "author_name": "Grange Pawden",
+    "published_status": false,
+    "serial_number": "5112316608",
+    "date_published": "10/5/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000104" }
+  },
+  {
+    "book_name": "Tabu: A Story of the South Seas",
+    "author_name": "Thomasina Jorat",
+    "published_status": true,
+    "serial_number": "7425736535",
+    "date_published": "12/18/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000105" }
+  },
+  {
+    "book_name": "Happy Together",
+    "author_name": "Vonny Fausch",
+    "published_status": false,
+    "serial_number": "4309529690",
+    "date_published": "11/14/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000106" }
+  },
+  {
+    "book_name": "Barbara",
+    "author_name": "Elsa McCulloch",
+    "published_status": true,
+    "serial_number": "2824801646",
+    "date_published": "1/17/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000107" }
+  },
+  {
+    "book_name": "Superclásico",
+    "author_name": "Ty Trevethan",
+    "published_status": false,
+    "serial_number": "1240612761",
+    "date_published": "6/1/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000108" }
+  },
+  {
+    "book_name": "Creature",
+    "author_name": "Eugenius Nock",
+    "published_status": false,
+    "serial_number": "7596027342",
+    "date_published": "3/22/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000109" }
+  },
+  {
+    "book_name": "Kismet",
+    "author_name": "Maisey Feaveer",
+    "published_status": false,
+    "serial_number": "9841727226",
+    "date_published": "1/14/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010a" }
+  },
+  {
+    "book_name": "Executive Target",
+    "author_name": "Shoshana Youster",
+    "published_status": true,
+    "serial_number": "9676953865",
+    "date_published": "3/1/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010b" }
+  },
+  {
+    "book_name": "Sweet November",
+    "author_name": "Cele Reinard",
+    "published_status": true,
+    "serial_number": "6755213713",
+    "date_published": "12/28/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010c" }
+  },
+  {
+    "book_name": "Villa Rides!",
+    "author_name": "Eberhard Luca",
+    "published_status": false,
+    "serial_number": "1015262341",
+    "date_published": "12/1/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010d" }
+  },
+  {
+    "book_name": "Tickle in the Heart, A",
+    "author_name": "Cole Minocchi",
+    "published_status": false,
+    "serial_number": "7267761356",
+    "date_published": "12/31/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010e" }
+  },
+  {
+    "book_name": "Aprile",
+    "author_name": "Morgan Rottenbury",
+    "published_status": false,
+    "serial_number": "7292426026",
+    "date_published": "3/18/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700010f" }
+  },
+  {
+    "book_name": "Camp",
+    "author_name": "Clarita Prestige",
+    "published_status": false,
+    "serial_number": "8353895129",
+    "date_published": "4/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000110" }
+  },
+  {
+    "book_name": "Maybe Baby",
+    "author_name": "Ileana Wyman",
+    "published_status": false,
+    "serial_number": "4554865614",
+    "date_published": "1/12/2022",
+    "author_id": { "$oid": "61e09900fc13ae6917000111" }
+  },
+  {
+    "book_name": "Python",
+    "author_name": "Finn Itzchaki",
+    "published_status": false,
+    "serial_number": "7933817564",
+    "date_published": "8/26/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000112" }
+  },
+  {
+    "book_name": "Home of the Brave",
+    "author_name": "Harlene Castelain",
+    "published_status": false,
+    "serial_number": "5819784065",
+    "date_published": "10/9/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000113" }
+  },
+  {
+    "book_name": "Urban Cowboy",
+    "author_name": "May Napoli",
+    "published_status": false,
+    "serial_number": "6139306019",
+    "date_published": "3/18/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000114" }
+  },
+  {
+    "book_name": "Shrek Forever After (a.k.a. Shrek: The Final Chapter)",
+    "author_name": "Even Mc-Kerley",
+    "published_status": false,
+    "serial_number": "5508822690",
+    "date_published": "6/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000115" }
+  },
+  {
+    "book_name": "Battle of the Warriors",
+    "author_name": "Lilly Siggery",
+    "published_status": true,
+    "serial_number": "1431646725",
+    "date_published": "2/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000116" }
+  },
+  {
+    "book_name": "Union Square",
+    "author_name": "Jasen Stone Fewings",
+    "published_status": true,
+    "serial_number": "1021926140",
+    "date_published": "1/7/2022",
+    "author_id": { "$oid": "61e09900fc13ae6917000117" }
+  },
+  {
+    "book_name": "Red Eye",
+    "author_name": "Tanner Marsden",
+    "published_status": true,
+    "serial_number": "1665721855",
+    "date_published": "7/16/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000118" }
+  },
+  {
+    "book_name": "Mattei Affair, The (Il caso Mattei)",
+    "author_name": "Edgard Gardiner",
+    "published_status": false,
+    "serial_number": "7560112900",
+    "date_published": "2/6/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000119" }
+  },
+  {
+    "book_name": "Gabriel",
+    "author_name": "Claus Devonport",
+    "published_status": true,
+    "serial_number": "2773529243",
+    "date_published": "4/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011a" }
+  },
+  {
+    "book_name": "Arrival, The",
+    "author_name": "Laney Harkins",
+    "published_status": true,
+    "serial_number": "3494631964",
+    "date_published": "11/24/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011b" }
+  },
+  {
+    "book_name": "Heart of Me, The",
+    "author_name": "Leland Armin",
+    "published_status": true,
+    "serial_number": "1552842819",
+    "date_published": "6/12/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011c" }
+  },
+  {
+    "book_name": "Spartacus",
+    "author_name": "Honoria McQuin",
+    "published_status": false,
+    "serial_number": "5494593223",
+    "date_published": "5/11/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011d" }
+  },
+  {
+    "book_name": "Immortal Beloved",
+    "author_name": "Yanaton Gook",
+    "published_status": true,
+    "serial_number": "9520354379",
+    "date_published": "1/21/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011e" }
+  },
+  {
+    "book_name": "Little Criminals",
+    "author_name": "Drud Blomefield",
+    "published_status": false,
+    "serial_number": "8609429024",
+    "date_published": "10/19/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700011f" }
+  },
+  {
+    "book_name": "Road to Nowhere",
+    "author_name": "Lura Kisbee",
+    "published_status": true,
+    "serial_number": "3240449803",
+    "date_published": "12/21/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000120" }
+  },
+  {
+    "book_name": "White Darkness, The",
+    "author_name": "Marietta Morigan",
+    "published_status": true,
+    "serial_number": "5129438051",
+    "date_published": "4/20/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000121" }
+  },
+  {
+    "book_name": "Beauty and the Beast",
+    "author_name": "Georgena Sink",
+    "published_status": false,
+    "serial_number": "2903081956",
+    "date_published": "10/15/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000122" }
+  },
+  {
+    "book_name": "Lost Boys: The Tribe",
+    "author_name": "Charla Liepina",
+    "published_status": true,
+    "serial_number": "3505076503",
+    "date_published": "1/13/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000123" }
+  },
+  {
+    "book_name": "Year of the Dragon",
+    "author_name": "De Kenlin",
+    "published_status": false,
+    "serial_number": "9543348650",
+    "date_published": "6/6/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000124" }
+  },
+  {
+    "book_name": "High on Crack Street: Lost Lives in Lowell",
+    "author_name": "Tobin Braunes",
+    "published_status": true,
+    "serial_number": "9908486497",
+    "date_published": "8/31/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000125" }
+  },
+  {
+    "book_name": "Eyes Without a Face (Yeux sans visage, Les)",
+    "author_name": "Brannon Spinney",
+    "published_status": true,
+    "serial_number": "7640066387",
+    "date_published": "8/12/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000126" }
+  },
+  {
+    "book_name": "Year of the Dog",
+    "author_name": "Chevy Micklem",
+    "published_status": true,
+    "serial_number": "1904305377",
+    "date_published": "6/27/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000127" }
+  },
+  {
+    "book_name": "Three Lives and Only One Death (Trois vies & une seule mort)",
+    "author_name": "Jarred Perotti",
+    "published_status": true,
+    "serial_number": "6816785614",
+    "date_published": "4/30/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000128" }
+  },
+  {
+    "book_name": "Once Upon a Time in China II (Wong Fei-hung Ji Yi: Naam yi dong ji keung)",
+    "author_name": "Elfrieda Patifield",
+    "published_status": true,
+    "serial_number": "8327428357",
+    "date_published": "6/12/2021",
+    "author_id": { "$oid": "61e09900fc13ae6917000129" }
+  },
+  {
+    "book_name": "Session 9",
+    "author_name": "Paulie Pimerick",
+    "published_status": true,
+    "serial_number": "2944523554",
+    "date_published": "4/4/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700012a" }
+  },
+  {
+    "book_name": "Alive",
+    "author_name": "Robb Jacobsz",
+    "published_status": true,
+    "serial_number": "3868126988",
+    "date_published": "7/25/2021",
+    "author_id": { "$oid": "61e09900fc13ae691700012b" }
+  }
+]
