@@ -20,11 +20,15 @@ const getAllAuthors = async (req: Request, res: Response) => {
 
     // 2). Sorting
 
-    if(req.query.sort){
-      query = query.sort(req.query.sort)
+    if (req.query.sort) {
+      req.query.sort = String(req.query.sort);
+      const sortBy = req.query.sort.split(",").join(" ");
+      query = query.sort(sortBy);
+    } else {
+      query = query.sort("--createdAt");
     }
     // EXECUTE THE QUERY
-    const authors = await query
+    const authors = await query;
 
     // SEND RESPONSE
     res.status(200).json({
