@@ -37,6 +37,7 @@ export function validateAuthorDetails(author: Record<string, any>) {
     dateRegistered: Joi.date(),
     age: Joi.number().min(1).max(180).required(),
     address: Joi.string().required().error(new Error("Address required")),
+    books:Joi.array()
   });
   return authorSchema.validate(author);
 }

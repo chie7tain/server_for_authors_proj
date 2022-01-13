@@ -1,13 +1,24 @@
 import { Request, Response } from "express";
 
-const Author = require("../models/authorModel");
+// const Author = require("../models/authorModel");
+const { Author } = require("../models/authorBookModel");
 import { validateAuthor, validateAuthorDetails } from "../validation/validate";
 
 // read data
 // CONTROLLERS
 const getAllAuthors = async (req: Request, res: Response) => {
   try {
-    const authors = await Author.find();
+    // BUILD QUERY
+    const queryObj = { ...req.query };
+    const excludedFields = ["page", "sort", "limit", "fields"];
+    excludedFields.forEach((el) => delete queryObj[el]);
+
+    const query = Author.find(req.query);
+
+    // EXECUTE THE QUERY
+    const authors = await query;
+
+    // SEND RESPONSE
     res.status(200).json({
       status: "success",
       data: authors,
@@ -81,7 +92,7 @@ const updateAuthor = async (req: Request, res: Response) => {
 
 const deleteAuthor = async (req: Request, res: Response) => {
   try {
-    await Author.findByIdAndDelete(req.params.id)
+    await Author.findByIdAndDelete(req.params.id);
     res.status(200).json({
       status: `successfully deleted`,
       message: null,
