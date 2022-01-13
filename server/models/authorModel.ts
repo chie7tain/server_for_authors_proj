@@ -8,17 +8,16 @@ const authorSchema = new mongoose.Schema({
   },
   age: Number,
   address: String,
-  books: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Book",
-    },
-  ],
+  books: [Array],
   createdAt: {
     type: Date,
     default: Date.now(),
   },
 });
+
+// authorSchema.pre(/^find/, function() {
+//   const book = this.books.map(el => )
+// })
 
 const Author = mongoose.model("Author", authorSchema);
 

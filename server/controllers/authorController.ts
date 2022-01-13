@@ -8,15 +8,19 @@ import { validateAuthor, validateAuthorDetails } from "../validation/validate";
 // CONTROLLERS
 const getAllAuthors = async (req: Request, res: Response) => {
   try {
-    console.log(req.query);
     // BUILD QUERY
     // 1). Filtering
     const queryObj = { ...req.query };
     const excludedFields = ["page", "sort", "limit", "fields"];
     excludedFields.forEach((el) => delete queryObj[el]);
     // 2). Advanced Filtering
-    const query = Author.find(req.query);
-    
+    let queryStr = JSON.stringify(queryObj);
+
+    queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+
+    const query = Author.find(JSON.parse(queryStr));
+    // console.log(query);
+
     // EXECUTE THE QUERY
     const authors = await query;
 
