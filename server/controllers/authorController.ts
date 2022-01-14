@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from "express";
 // const Author = require("../models/authorModel");
 const Author = require("../models/authorModel");
 import { validateAuthor, validateAuthorDetails } from "../validation/validate";
-
+const APIFeatures = require("../utils/apiFeatures");
 
 // read data
 // CONTROLLERS
@@ -23,7 +23,6 @@ const aliasYoungAuthors = async (
 };
 const getAllAuthors = async (req: Request, res: Response) => {
   try {
-
     // EXECUTE THE QUERY
     const features = new APIFeatures(Author.find(), req.query)
       .filter()
@@ -114,6 +113,17 @@ const deleteAuthor = async (req: Request, res: Response) => {
     });
   } catch (error) {
     console.log(error);
+  }
+};
+const getRestaurantStats = async (
+  req: Request,
+  res: Response
+): Promise<Response> => {
+  try {
+    const stats = await Author.aggregate();
+  } catch (err) {
+    console.log(err);
+    res.status(400).json({ status: "fail", message: err });
   }
 };
 export {
