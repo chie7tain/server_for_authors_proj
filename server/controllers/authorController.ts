@@ -38,6 +38,23 @@ const getAllAuthors = async (req: Request, res: Response) => {
     } else {
       query = query.select("-__v");
     }
+
+    // 4). Pagination
+    const page = parseInt(req.query.page as string, 10) || 1;
+    const limit = parseInt(req.query.limit as string, 10) || 100;
+    const skip = (page - 1) * limit;
+    // const startIndex = (page - 1) * limit;
+    // const endIndex = page * limit;
+    // const total = await Author.countDocuments();
+
+    query = query.skip(skip).limit(5);
+    if (req.query.page) {
+      const numAuthors = await Author.countDocuments();
+      if (skip >= numAuthors) {
+        throw new Error("This page does not exist");
+      }
+    }
+
     // EXECUTE THE QUERY
     const authors = await query;
 
