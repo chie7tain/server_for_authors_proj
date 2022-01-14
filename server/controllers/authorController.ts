@@ -115,10 +115,7 @@ const deleteAuthor = async (req: Request, res: Response) => {
     console.log(error);
   }
 };
-const getRestaurantStats = async (
-  req: Request,
-  res: Response
-): Promise<Response> => {
+const getRestaurantStats = async (req: Request, res: Response) => {
   try {
     const stats = await Author.aggregate();
   } catch (err) {

@@ -7,6 +7,7 @@ const viewrouter = require("./routes/views");
 const authorRouter = require("./routes/authorRoutes");
 const bookRouter = require("./routes/bookRoutes");
 const userRouter = require("./routes/user");
+const restaurantRouter = require("./routes/restaurantRoutes");
 
 import express from "express";
 const app = express();
@@ -25,6 +26,7 @@ app.use(cookieParser());
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/authors", authorRouter);
 app.use("/api/v1/books", bookRouter);
+app.use("/api/v1/restaurants", restaurantRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req: Request, res: Response, next: NextFunction) {

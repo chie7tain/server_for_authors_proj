@@ -1,5 +1,5 @@
 const Restaurant = require("../models/restaurantModel");
-import {Request, Response} from 'express';
+import { Request, Response } from "express";
 
 export const createRestaurant = async (req: Request, res: Response) => {
   try {
@@ -18,16 +18,14 @@ export const createRestaurant = async (req: Request, res: Response) => {
 };
 
 export const getAllRestaurants = async (req: Request, res: Response) => {
-try{
-  const restaurants = await Restaurant.find();
-  res.status(200).json({
-    status:"sucess",
-    data:restaurants,
-  })
-
-}catch(error){
-  console.log(error);
-  res.status(400).json({status: "fail", message: error});
-}
-}
-
+  try {
+    const restaurants = await Restaurant.find();
+    res.status(200).json({
+      status: "sucess",
+      data: restaurants,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ status: "fail", message: error });
+  }
+};
