@@ -7,10 +7,11 @@ import {
   getAllAuthors,
   updateAuthor,
   deleteAuthor,
+  aliasYoungAuthors,
 } from "../controllers/authorController";
 import { checkAuth } from "../middleware/check-auth";
 // /authors
-
+router.route("/undertwenty").get(aliasYoungAuthors, getAllAuthors);
 // router.route("/createauthor").get(createAuthorForm);
 router.route("/").get(getAllAuthors).post(createAuthor);
 
